@@ -19,4 +19,4 @@ jobs:
 
     - name: Build and push Docker image
       run: |
-        docker build -t barkuni-api:latest .
+        cd api && docker build -t barkuni-api:latest .
