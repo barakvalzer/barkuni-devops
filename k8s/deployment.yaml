@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: barkuni-api
-        image: barkuni-api:latest
+        image: barakvalzer/barkuni-api:latest
         imagePullPolicy: Never
         ports:
         - containerPort: 5000
