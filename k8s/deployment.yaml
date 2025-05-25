@@ -1,0 +1,21 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: barkuni-api
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: barkuni-api
+  template:
+    metadata:
+      labels:
+        app: barkuni-api
+    spec:
+      containers:
+      - name: barkuni-api
+        image: barkuni-api:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 5000
